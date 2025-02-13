@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="utf-8" /> 
+<title>Chemie Test</title> 
+</head> 
+<body> 
+<script type="text/javascript" src="chem_test.js"></script> 
+<script type="text/javascript" src="questions_ws0809ueb.json"></script> 
+<script type="text/javascript"> 
+	for (n = 0; n < questions.length; n ++) {
+		document.write(renderQuestion(questions[n]));
+		document.write("<hr />\n");
+	}
+</script> 
+</body> 
+</html> 

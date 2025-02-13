@@ -1,0 +1,770 @@
+var questions = [
+	{
+		"num" : 1,
+		"question" : "Wie viel Mol Substanz sind in 125 ml einer Kaliumchlorid-Lösung der Konzentration 0,100 mol/L enthalten?",
+		"remark" : null,
+		"list" : null,
+		"answers" : [
+			"0,125 mol",
+			"0,100 mol",
+			"0,010 mol",
+			"0,0125 mol",
+			"1,25 mol"
+		],
+		"correct" : 4
+	},
+	{
+		"num" : 2,
+		"question" : "Wie viele Neutronen und Elektronen befinden sich in einem <sup>13</sup>C Kohlenstoff-Atom?",
+		"remark" : null,
+		"list" : null,
+		"answers" : [
+			"6 Neutronen und 6 Elektronen",
+			"7 Neutronen und 7 Elektronen",
+			"7 Neutronen und 6 Elektronen",
+			"7 Neutronen und 13 Elektronen",
+			"6 Neutronen und 7 Elektronen"
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 3,
+		"question" : "Welche der folgenden  Aussagen treffen zu?",
+		"remark" : null,
+		"list" : [
+			"Atomkerne enthalten als Bausteine Protonen, Neutronen und Elektronen.",
+			"Die Masse eines Elektrons ist kleiner als die Masse  eines Protons.",
+			"Die Massenzahl der Nuclide ist gleich der Zahl der Protonen.",
+			"Isotope Nuclide eines Elements unterscheiden sich in der Zahl der Neutronen im Kern."
+		],
+		"answers" : [
+			"nur 1 und 3 sind richtig",
+			"nur 2 und 3 sind richtig",
+			"nur 2 und 4 sind richtig",
+			"nur 3 und 4 sind richtig",
+			"nur 1, 2 und 4 sind richtig"
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 4,
+		"question" : "Welche Aussage trifft für Elektronen <i>nicht</i> zu?",
+		"remark" : null,
+		"list" : null,
+		"answers" : [
+			"Elektronen tragen eine negative Elementarladung.",
+			"Elektronen haben eine kleinere Masse als Protonen.",
+			"Elektronen können in elektrischen und magnetischen Feldern beschleunigt werden.",
+			"Elektronen werden beim radioaktiven &beta;-Zerfall emittiert.",
+			"Isotope Nuclide des gleichen Elements enthalten im Kern verschieden viele Elektronen."
+		],
+		"correct" : 5
+	},
+	{
+		"num" : 5,
+		"question" : "Welche Aussage trifft zu?",
+		"remark" : "Neutrale Isotope eines Elements sind charakterisiert durch folgende Angaben ihrer Bausteine:	<br /><br />	Zahl der Protonen | Zahl der Neutronen | Zahl der Elektronen",
+		"list" : null,
+		"answers" : [
+			"gleich | gleich | gleich",
+			"gleich | verschieden | verschieden",
+			"verschieden | gleich | verschieden",
+			"verschieden | verschieden | gleich",
+			"gleich | verschieden | gleich"
+		],
+		"correct" : 5
+	},
+	{
+		"num" : 6,
+		"question" : "Welche Aussagen über Atomorbitale treffen zu?",
+		"remark" : null,
+		"list" : [
+			"Wellenfunktionen für stationäre Zustände von Elektronen in einem Atom nennt man Atomorbitale.",
+			"Ein Orbital kann qualitativ als Raum der Aufenthaltswahrscheinlichkeit von Elektronen beschrieben werden.",
+			"Zur eindeutigen Charakterisierung von Orbitalen genügt die Angabe der Nebenquantenzahl <i>l</i>.",
+			"Die Ladungswolke von s-Orbitalen kann als kugelförmig betrachtet werden.",
+			"Die Ladungswolke von p-Orbitalen kann angenähert als hantelförmig beschrieben werden."
+		],
+		"answers" : [
+			"nur 1, 3 und 4 sind richtig",
+			"nur 2, 3 und 5 sind richtig",
+			"nur 2, 4 und 5 sind richtig",
+			"nur 1, 2, 4 und 5 sind richtig",
+			"1-5 = alle sind richtig",
+		],
+		"correct" : 4
+	},
+	{
+		"num" : 7,
+		"question" : "Welches Element besitzt im Grundzustand die Elektronenkonfiguration 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>4</sup>?",
+		"remark" : null,
+		"list" : null,
+		"answers" : [
+			"Sauerstoff",
+			"Phosphor",
+			"Schwefel",
+			"Stickstoff",
+			"Chlor"
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 8,
+		"question" : "Die magnetische Quantenzahl m<sub>l</sub> bestimmt welche Eigenschaft der Orbitale?",
+		"remark" : null,
+		"list" : null,
+		"answers" : [
+			"Die Größe der Orbitale",
+			"Die Form der Orbitale",
+			"Die Energie der Orbitale",
+			"Die Ausrichtung der Orbitale im Raum",
+			"Die Besetzung der Orbitale mit Elektronen"
+		],
+		"correct" : 4
+	},
+	{
+		"num" : 9,
+		"question" : "Welche Aussage trifft zu?",
+		"remark" : "Aus der Frequenz einer Atomemissionslinie kann in einfacher Weise abgeleitet werden:",
+		"list" : null,
+		"answers" : [
+			"der Energieinhalt des jeweiligen Grundzustandes",
+			"der Energieinhalt des jeweiligen angeregten Zustandes",
+			"die Differenz der Energieinhalte zweier Elektronenzustande",
+			"die Differenz der Energieinhalte zweier Kernspinzustände",
+			"die Größen der Kerndrehimpulse"
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 10,
+		"question" : "Welche Aussagen zum PSE treffen zu?",
+		"remark" : null,
+		"list" : [
+			"Innerhalb der Hauptgruppe nimmt der Ionenradius mit steigender Ordnungszahl zu.",
+			"Innerhalb der Hauptgruppe nimmt die Elektronegativität mit steigender Ordnungszahl zu.",
+			"Elemente der 2. Periode können maximal vier kovalente Bindungen eingehen.",
+			"Der metallische Charakter wächst innerhalb einer Hauptgruppe mit steigender Ordnungszahl.",
+			"Die Ionisierungsenergie steigt innerhalb einer Hauptgruppe mit wachsender Ordnungszahl."
+		],
+		"answers" : [
+			"nur 1 ist richtig",
+			"nur 4 und 5 sind richtig",
+			"nur 1, 3 und 4 sind richtig",
+			"nur 1, 4 und 5 sind richtig",
+			"nur 2, 3 und 4 sind richtig",
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 11,
+		"question" : "Bei welchen einzelnen neutralen Atomen der folgenden Elemente liegt eine abgeschlossene Elektronenschale vor?",
+		"remark" : null,
+		"list" : [
+			"Wasserstoff",
+			"Natrium",
+			"Chlor"
+		],
+		"answers" : [
+			"bei keinem",
+			"nur bei 1",
+			"nur bei 2",
+			"nur bei 3",
+			"nur bei 2 und 3"
+		],
+		"correct" : 1
+	},
+	{
+		"num" : 12,
+		"question" : "Welches der folgenden Ionen besitzt keine Edelgaskonfiguration?",
+		"remark" : null,
+		"list" : null,
+		"answers" : [
+			"Be<sup>2+</sup>",
+			"O<sup>2-</sup>",
+			"I<sup>-</sup>",
+			"H<sup>-</sup>",
+			"H<sup>+</sup>"
+		],
+		"correct" : 5
+	},
+	{
+		"num" : 13,
+		"question" : "Aufgabe",
+		"remark" : "Die Valenzelektronen sind in besonderem Maße für das chemische Verhalten der Elemente verantwortlich,		<br />	<b>weil</b>	<br />	die maximale Oxidationszahl eines Elements nicht höher als die Zahl der Valenzelektronen sein kann.	<br /><br />	Aussage 1 | Aussage 2 | Verknüpfung",
+		"list" : null,
+		"answers" : [
+			"richtig | richtig | richtig",
+			"richtig | richtig | falsch",
+			"richtig | falsch  | -",
+			"falsch  | richtig | -",
+			"falsch  | falsch  | -"
+		],
+		"correct" : 2
+	},
+	{
+		"num" : 14,
+		"question" : "ln welcher der folgenden Reihen sind die Ionen nicht nach zunehmender Größe der Ionenradien geordent?",
+		"remark" : null,
+		"list" : null,
+		"answers" : [
+			"Li<sup>+</sup> | Na<sup>+</sup> | K<sup>+</sup> | Rb<sup>+</sup> | Cs<sup>+</sup>",
+			"Be<sup>2+</sup> | Mg<sup>2+</sup> | Ca<sup>2+</sup> | Sr<sup>2+</sup> | Ba<sup>2+</sup>",
+			"F<sup>-</sup> | Cl<sup>-</sup> | Br<sup>-</sup> | I<sup>-</sup>",
+			"O<sup>2-</sup> | S<sup>2-</sup> | Se<sup>2-</sup> | Te<sup>2-</sup>",
+			"Cu<sup>2+</sup> | Zn<sup>2+</sup> | Ga<sup>3+</sup> | Ge<sup>3+</sup>"
+		],
+		"correct" : 5
+	},
+	{
+		"num" : 15,
+		"question" : "Aufgabe",
+		"remark" : "Die Bildung des Ions Cl<sup>-</sup> aus atomarem Chlor verläuft unter Energieabgabe,		<br />	<b>weil</b>	<br />	das Ion Cl<sup>-</sup> die gleiche Elektronenzahl wie das Edelgas Neon besitzt.	<br /><br />	Aussage 1 | Aussage 2 | Verknüpfung",
+		"list" : null,
+		"answers" : [
+			"richtig | richtig | richtig",
+			"richtig | richtig | falsch",
+			"richtig | falsch  | -",
+			"falsch  | richtig | -",
+			"falsch  | falsch  | -"
+		],
+		"correct" : 5
+	},
+	{
+		"num" : 16,
+		"question" : "Ordnen Sie der Elektronegativitätsdifferenz &ge; 2,5 den entsprechenden Bindungstyp zu.",
+		"remark" : null,
+		"list" : null,
+		"answers" : [
+			"Metallische Bindung",
+			"Ionenbindung",
+			"polare Atombindung",
+			"unpolare Atombindung",
+			"H-Brückenbindung"
+		],
+		"correct" : 2
+	},
+	{
+		"num" : 17,
+		"question" : "Ordnen Sie der Elektronegativitätsdifferenz = 1,1 den entsprechenden Bindungstyp zu.",
+		"remark" : null,
+		"list" : null,
+		"answers" : [
+			"Metallische Bindung",
+			"Ionenbindung",
+			"polare Atombindung",
+			"unpolare Atombindung",
+			"H-Brückenbindung"
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 18,
+		"question" : "Welche Aussage über eine reine Ionenbindung trifft <i>nicht</i> zu?",
+		"remark" : null,
+		"list" : null,
+		"answers" : [
+			"Sie bildet sich hauptsächlich zwischen Atomen mit hoher Ionisierungsenergie aus.",
+			"Es handelt sich um eine elektrostatische Bindung.",
+			"Sie bildet sich hauptsächlich zwischen Atomen stark unterschiedlicher Elektronegativität aus.",
+			"Sie ist ungerichtet.",
+			"Sie kann zum Aufbau eines Raumgitters führen."
+		],
+		"correct" : 1
+	},
+	{
+		"num" : 19,
+		"question" : "Welche Aussage über Natriumchlorid trifft <i>nicht</i> zu?",
+		"remark" : null,
+		"list" : null,
+		"answers" : [
+			"Natriumchlorid hat eine geringere Gitterenergie als Natriumfluorid.",
+			"Die elektrische Leitfähigkeit einer Natriumchlorid-Schmelze nimmt mit steigender Temperatur zu.",
+			"Reines festes Natriumchlorid leitet den elektrischen Strom nicht.",
+			"Im Natriumchlorid beträgt die Koordinationszahl der Chlorid-lonen 4.",
+			"Im Natriumchloridgitter ist jedes Ion von 6 andersartigen Ionen umgeben."
+		],
+		"correct" : 4
+	},
+	{
+		"num" : 20,
+		"question" : "Aufgabe",
+		"remark" : "Beim Auflösen von Ionenverbindungen in Wasser wird das Kristallgitter zerstört,		<br />	<b>weil</b>	<br />	beim Lösevorgang einer Ionenverbindung in Wasser nur die in den Ionenkristallen auftretenden van der Waals-Kräfte überwunden werden müssen.	<br /><br />	Aussage 1 | Aussage 2 | Verknüpfung",
+		"list" : null,
+		"answers" : [
+			"richtig | richtig | richtig",
+			"richtig | richtig | falsch",
+			"richtig | falsch  | -",
+			"falsch  | richtig | -",
+			"falsch  | falsch  | -"
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 21,
+		"question" : "Aufgabe",
+		"remark" : "Welche der folgenden Verbindungen hat am Zentralatom ein freies Elektronenpaar?",
+		"list" : null,
+		"answers" : [
+			"BF<sub>3</sub>",
+			"AlCl<sub>3</sub>",
+			"PCl<sub>5</sub>",
+			"SO<sub>3</sub>",
+			"PCl<sub>3</sub>"
+		],
+		"correct" : 5
+	},
+	{
+		"num" : 22,
+		"question" : "Aufgabe",
+		"remark" : "ln welchen der nachstehend aufgeführten Verbindungen bzw. Stoffen sind die Kohlenstoffatome sp<sup>2</sup>-hybridisiert?",
+		"list" : [
+			"CO<sub>2</sub>",
+			"CO<sub>3</sub><sup>2-</sup>",
+			"Diamant",
+			"Graphit",
+			"HCN"
+		],
+		"answers" : [
+			"Nur 3 ist richtig",
+			"Nur 1 und 2 sind richtig",
+			"Nur 2 und 4 sind richtig",
+			"Nur 4 und 5 sind richtig",
+			"Nur 1, 2 und 4 sind richtig"
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 23,
+		"question" : "Aufgabe",
+		"remark" : "ln welchen der nachstehend aufgeführten Verbindungen liegen die Valenzwinkel nahe am Tetraederwinkel (109°)?",
+		"list" : [
+			"NH<sub>3</sub>",
+			"SO<sub>2</sub>",
+			"CO<sub>2</sub>",
+			"H<sub>2</sub>O",
+			"CH<sub>4</sub>"
+		],
+		"answers" : [
+			"Nur 1 und 3 sind richtig",
+			"Nur 1 und 4 sind richtig",
+			"Nur 2 und 5 sind richtig",
+			"Nur 4 und 5 sind richtig",
+			"Nur 1, 4 und 5 sind richtig"
+		],
+		"correct" : 5
+	},
+	{
+		"num" : 24,
+		"question" : "Aufgabe",
+		"remark" : "Die Orbitale von Valenzelektronen der Metallatome bilden im Metallgitter ein Valenzband,		<br />	<b>weil</b>	<br />	durch die Kombination vieler Atomorbitale eine Vielzahl von Molekülorbitalen ähnlicher Energie entsteht.	<br /><br />	Aussage 1 | Aussage 2 | Verknüpfung",
+		"list" : null,
+		"answers" : [
+			"richtig | richtig | richtig",
+			"richtig | richtig | falsch",
+			"richtig | falsch  | -",
+			"falsch  | richtig | -",
+			"falsch  | falsch  | -"
+		],
+		"correct" : 1
+	},
+	{
+		"num" : 25,
+		"question" : "Aufgabe",
+		"remark" : "Welche Aussage trifft <i>nicht</i> zu?	<br /><br />	ln einem typischen Metall",
+		"list" : null,
+		"answers" : [
+			"nimmt die elektrische Leitfähigkeit mit wachsender Temperatur ab",
+			"können sich die Leitungselektronen weitgehend frei bewegen",
+			"erfolgt ein Ladungstransport durch Elektronen",
+			"nimmt der Widerstand bei konstanter Temperatur mit wachsender Stromstärke ab",
+			"nimmt der spezifische Widerstand mit wachsender Temperatur zu"
+		],
+		"correct" : 4
+	},
+	{
+		"num" : 26,
+		"question" : "Aufgabe",
+		"remark" : "Silizium besitzt bei Raumtemperatur nur eine geringe elektrische Leitfähigkeit,		<br />	<b>weil</b>	<br />	bei Halbleitern wie Silizium, die Atomorbitale der Valenzelektronen in ein Valenzband übergehen.	<br /><br />	Aussage 1 | Aussage 2 | Verknüpfung",
+		"list" : null,
+		"answers" : [
+			"richtig | richtig | richtig",
+			"richtig | richtig | falsch",
+			"richtig | falsch  | -",
+			"falsch  | richtig | -",
+			"falsch  | falsch  | -"
+		],
+		"correct" : 2
+	},
+	{
+		"num" : 27,
+		"question" : "Aufgabe",
+		"remark" : "Welche Bindungsart tritt zwischen He-Atomen in flüssigem Helium auf?",
+		"list" : null,
+		"answers" : [
+			"Ionische Bindung",
+			"Kovalente Bindung",
+			"Polare Atombindung",
+			"Bindung durch van der Waals-Kräfte",
+			"Keine der genannten Bindungen"
+		],
+		"correct" : 4
+	},
+	{
+		"num" : 28,
+		"question" : "Aufgabe",
+		"remark" : "Welche Aussagen über Vorgänge beim Schmelzen eines einheitlichen Stoffes treffen zu?",
+		"list" : [
+			"Die mittleren Abstände benachbarter Atome oder Ionen ändern sich nur wenig.",
+			"Die Anziehungskräfte zwischen nächsten Nachbarn verschwinden.",
+			"Die molare Masse des Stoffes ändert sich."
+		],
+		"answers" : [
+			"Nur 1 ist richtig",
+			"Nur 2 ist richtig",
+			"Nur 1 und 2 sind richtig",
+			"Nur 1 und 3 sind richtig",
+			"Nur 2 und 3 sind richtig"
+		],
+		"correct" : 1
+	},
+	{
+		"num" : 29,
+		"question" : "Aufgabe",
+		"remark" : "Welche Aussagen treffen zu?	<br />	Bei konstantem Druck und konstanter Temperatur läuft eine definierte Reaktion in einem geschlossenen System unter keinen Umständen freiwillig ab, wenn für diese Reaktion gilt (&Delta;H Reaktionswärme, &Delta;S Reaktionsentropie):",
+		"list" : [
+			"&Delta;H < 0, &Delta;S < 0",
+			"&Delta;H < 0, &Delta;S > 0",
+			"&Delta;H > 0, &Delta;S < 0",
+			"&Delta;H = 0, &Delta;S > 0"
+		],
+		"answers" : [
+			"Nur 3 ist richtig",
+			"Nur 4 ist richtig",
+			"Nur 1 und 4 sind richtig",
+			"Nur 2 und 3 sind richtig",
+			"Nur 1 und 2 sind richtig"
+		],
+		"correct" : 1
+	},
+	{
+		"num" : 30,
+		"question" : "Aufgabe",
+		"remark" : "Welche Aussage trifft zu?	<br /><br />	Aus dem Redoxpotential E eines Redoxpaares errechnet sich die freie Reaktionsenthalpie &Delta;G (entspricht der max. elektrischen Arbeit in einer galvanischen Zelle) nach: (n Zahl der in der Reaktion übergehenden Elektronen, F: Faradaykonstante)",
+		"list" : null,
+		"answers" : [
+			"&Delta;G = n<sup>2</sup> &sdot; F &sdot; E",
+			"&Delta;G = n &sdot; F &sdot; <i>ln</i> E",
+			"&Delta;G = n &sdot; F &sdot; E",
+			"&Delta;G = -n<sup>2</sup> &sdot; F &sdot; E",
+			"&Delta;G = -n &sdot; F &sdot; E"
+		],
+		"correct" : 5
+	},
+	{
+		"num" : 31,
+		"question" : "Aufgabe",
+		"remark" : "Welche Aussage über das chemische Gleichgewicht und das Massenwirkungsgesetz trifft <i>nicht</i> zu?",
+		"list" : null,
+		"answers" : [
+			"Die Gleichgewichtskonstante einer Reaktion ist temperatur- und druckunabhängig.",
+			"Bei der Berechnung der Gleichgewichtskonstanten werden die Konzentrationen (Aktivitäten) der Produkte in den Zähler und die Konzentrationen (Aktivitäten) der Edukte in den Nenner gesetzt.",
+			"Die Gleichgewichtslage lässt sich durch Änderung der Konzentration eines der Reaktionspartner verändern.",
+			"Bei höheren Konzentrationen sind im Massenwirkungsgesetz die Aktivitätskoeffizienten zu berücksichtigen.",
+			"Die Anwendung des Massenwirkungsgesetzes ist auch bei heterogenen Gleichgewichtssystemen möglich."
+		],
+		"correct" : 1
+	},
+	{
+		"num" : 32,
+		"question" : "Aufgabe",
+		"remark" : "Welche Aussage trifft zu?	<br /><br />	Das 'Ammoniak-Gleichgewicht' wird für die gasförmigen Komponenten durch folgende Gleichung beschrieben: 	<br /><br />	N<sub>2</sub> + 3 H<sub>2</sub> &larr;&mdash;Kat.&mdash;&rarr; 2 NH<sub>3</sub>	<br />	&Delta;H = -92,4 kJ/mol <br /><br /> Das Gleichgewicht wird zugunsten des Produkts (Ammoniak) verändert, wenn",
+		"list" : null,
+		"answers" : [
+			"die Temperatur bei gleich bleibendem Druck erhöht wird",
+			"die Temperatur erniedrigt, der Druck erhöht wird",
+			"die Temperatur und der Druck erhöht wird",
+			"die Aktivität des Katalysators erhöht wird",
+			"die Reaktionszeit verdoppelt wird."
+		],
+		"correct" : 2
+	},
+	{
+		"num" : 33,
+		"question" : "Aufgabe",
+		"remark" : "Eine freiwillig ablaufende Reaktion verläuft vom Anfangszustand aus nur bis zum Gleichgewichtszustand,		<br />	<b>weil</b>	<br />	bei einer zum Gleichgewicht gelangten, freiwillig verlaufenden Reaktion, diese nur durch äußeren Zwang verändert werden kann.	<br /><br />	Aussage 1 | Aussage 2 | Verknüpfung",
+		"list" : null,
+		"answers" : [
+			"richtig | richtig | richtig",
+			"richtig | richtig | falsch",
+			"richtig | falsch  | -",
+			"falsch  | richtig | -",
+			"falsch  | falsch  | -"
+		],
+		"correct" : 1
+	},
+	{
+		"num" : 34,
+		"question" : "Aufgabe",
+		"remark" : "Welche Aussage über die Reaktionsgeschwindigkeit einer Reaktion trifft zu?",
+		"list" : [
+			"Die Reaktionsgeschwindigkeit einer Reaktion ist abhängig von der Geschwindigkeit der Teilchen.",
+			"Die Reaktionsgeschwindigkeit einer Reaktion ist unabhängig von der Konzentration der Ausgangsstoffe.",
+			"Die Reaktionsgeschwindigkeit einer Reaktion ist abhängig von der Temperatur.",
+			"Die Reaktionsgeschwindigkeit einer Reaktion ist abhängig von der Zahl der Teilchen in einem bestimmten Volumen."
+		],
+		"answers" : [
+			"Nur 3 ist richtig",
+			"Nur 4 ist richtig",
+			"Nur 1 und 4 sind richtig",
+			"Nur 1, 2 und 4 sind richtig",
+			"Nur 1, 3 und 4 sind richtig"
+		],
+		"correct" : 5
+	},
+	{
+		"num" : 35,
+		"question" : "Aufgabe",
+		"remark" : "Welche der folgenden Aussagen ergibt sich aus der Arrhenius-Gleichung <br /><br /> k = A &sdot; <i>e</i><sup>(-E<sub>a</sub> &frasl; R &sdot; T)</sup> ?",
+		"list" : null,
+		"answers" : [
+			"Die Reaktionsgeschwindigkeit ist abhängig von der Konzentration (Aktivität) der Edukte.",
+			"Die Geschwindigkeitskonstante nimmt bei Erhöhung der Temperatur ab.",
+			"Die Geschwindigkeitskonstante nimmt bei Erhöhung der Temperatur zu",
+			"Die Geschwindigkeitskonstante nimmt proportional 1 &frasl; T zu.",
+			"Die Geschwindigkeitskonstante nimmt nur bei negativem Vorzeichen von E<sub>a</sub> bei Erhöhung der Temperatur zu."
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 36,
+		"question" : "Aufgabe",
+		"remark" : "Säure-Base-Reaktionen im Sinne der Brönsted-Theorie sind nur in wässriger Lösung möglich,		<br />	<b>weil</b>	<br />	Wasser Protonen sowohl aufzunehmen als auch abzugeben vermag.	<br /><br />	Aussage 1 | Aussage 2 | Verknüpfung",
+		"list" : null,
+		"answers" : [
+			"richtig | richtig | richtig",
+			"richtig | richtig | falsch",
+			"richtig | falsch  | -",
+			"falsch  | richtig | -",
+			"falsch  | falsch  | -"
+		],
+		"correct" : 4
+	},
+	{
+		"num" : 37,
+		"question" : "Aufgabe",
+		"remark" : "Welche Aussagen treffen zu? <br /> ln wässriger Lösung stehen die Säurekonstante K<sub>s</sub> einer Brönsted-Säure HB und die Bastenkonstante K<sub>b</sub> ihrer konjugierten Base B in folgender Beziehung zum Ionenprodukt des Wassers (K<sub>w</sub>):",
+		"list" : [
+			"K<sub>s</sub> &sdot; K<sub>b</sub> = K<sub>w</sub>",
+			"K<sub>s</sub> : K<sub>b</sub> = K<sub>w</sub>",
+			"pK<sub>s</sub> + pK<sub>b</sub> = pK<sub>w</sub>",
+			"pK<sub>s</sub> - pK<sub>b</sub> = pK<sub>w</sub>"
+		],
+		"answers" : [
+			"Nur 1 ist richtig",
+			"Nur 3 ist richtig",
+			"Nur 4 ist richtig",
+			"Nur 1 und 3 sind richtig",
+			"Nur 2 und 4 sind richtig"
+		],
+		"correct" : 4
+	},
+	{
+		"num" : 38,
+		"question" : "Aufgabe",
+		"remark" : "Wie groß ist der pH-Wert einer 0,1 molaren wässrigen Ammoniak-Lösung (pK<sub>b</sub> = 4,75)?",
+		"list" : null,
+		"answers" : [
+			"7,9",
+			"8,6",
+			"9,2",
+			"10,6",
+			"11,1"
+		],
+		"correct" : 5
+	},
+	{
+		"num" : 39,
+		"question" : "Aufgabe",
+		"remark" : "Welche Aussagen treffen zu?	<br />	Zur Autoprotolyse sind folgende Verbindungen befähigt:",
+		"list" : [
+			"Wasser",
+			"Salpetersäure",
+			"Schwefelsäure",
+			"Natriumchlorid"
+		],
+		"answers" : [
+			"Nur 1 ist richtig",
+			"Nur 2 und 4 sind richtig",
+			"Nur 3 und 4 sind richtig",
+			"Nur 1,2 und 4 sind richtig",
+			"Nur 1,3 und 4 sind richtig"
+		],
+		"correct" : 1
+	},
+	{
+		"num" : 40,
+		"question" : "Aufgabe",
+		"remark" : "Eine Lösung von 1 Mol Essigsäure in 1 Liter Wasser wird mit 0,5 Mol KOH versetzt. Welchen pH-Wert hat die entstandene Lösung näherungsweise (pK<sub>s</sub> von Essigsäure = 5)?",
+		"list" : null,
+		"answers" : [
+			"1,0",
+			"2,5",
+			"5,0",
+			"7,0",
+			"10"
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 41,
+		"question" : "Aufgabe",
+		"remark" : "Eine wässrige Salzsäure-Lösung (Konzentration 0,1 mol &frasl; l } werde durch Zugabe von Wasser im Verhältnis 1:1 verdünnt.	<br />	Welche Aussagen sind richtig?",
+		"list" : [
+			"Der pH-Wert ändert sich nicht.",
+			"Der pH-Wert wird größer.",
+			"Der pH-Wert wird kleiner.",
+			"Die Chloridionenkonzentration sinkt."
+		],
+		"answers" : [
+			"Nur 1 ist richtig",
+			"Nur 2 ist richtig",
+			"Nur 2 und 4 sind richtig",
+			"Nur 3 und 4 sind richtig",
+			"Nur 1 und 4 sind richtig"
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 42,
+		"question" : "Aufgabe",
+		"remark" : "Welche Aussage trifft zu?	<br />	Eine 10<sup>-9</sup> molare wässrige NaOH-Lösung hat bei 25°C theoretisch folgenden pH-Wert (auf 2 Dezimalen gerundet):",
+		"list" : null,
+		"answers" : [
+			"5,00",
+			"6,09",
+			"7,00",
+			"9,00",
+			"9,01"
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 43,
+		"question" : "Aufgabe",
+		"remark" : "Ordnen Sie der Stickstoffverbindung NH<sub>4</sub><sup>+</sup> die zutreffende Oxidationszahl zu.",
+		"list" : null,
+		"answers" : [
+			"-3",
+			"-2",
+			"+1",
+			"+3",
+			"+5"
+		],
+		"correct" : 1
+	},
+	{
+		"num" : 44,
+		"question" : "Aufgabe",
+		"remark" : "Ordnen Sie der Stickstoffverbindung N<sub>2</sub>O die zutreffende Oxidationszahl zu.",
+		"list" : null,
+		"answers" : [
+			"-3",
+			"-2",
+			"+1",
+			"+3",
+			"+5"
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 45,
+		"question" : "Aufgabe",
+		"remark" : "Ordnen Sie der Stickstoffverbindung NO<sub>2</sub><sup>-</sup> die zutreffende Oxidationszahl zu.",
+		"list" : null,
+		"answers" : [
+			"-3",
+			"-2",
+			"+1",
+			"+3",
+			"+5"
+		],
+		"correct" : 4
+	},
+	{
+		"num" : 46,
+		"question" : "Aufgabe",
+		"remark" : "Eine Oxidation ist ein Elektronenverlust,		<br />	<b>weil</b>	<br />	das Oxidationsmittel Elektronen abgibt und dabei selbst oxidiert wird.	<br /><br />	Aussage 1 | Aussage 2 | Verknüpfung",
+		"list" : null,
+		"answers" : [
+			"richtig | richtig | richtig",
+			"richtig | richtig | falsch",
+			"richtig | falsch  | -",
+			"falsch  | richtig | -",
+			"falsch  | falsch  | -"
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 47,
+		"question" : "Aufgabe",
+		"remark" : "Welche Oxidationszahl hat der Schwefel in der Schwefelsäure?",
+		"list" : null,
+		"answers" : [
+			"-6",
+			"-3",
+			"+4",
+			"+5",
+			"+6"
+		],
+		"correct" : 5
+	},
+	{
+		"num" : 48,
+		"question" : "Aufgabe",
+		"remark" : "Nonmalpotentiale lassen sich nur für Redoxprozesse, bei denen Metalle beteiligt sind, festlegen,		<br />	<b>weil</b>	<br />	Elektroden nur aus Metallen bestehen können.	<br /><br />	Aussage 1 | Aussage 2 | Verknüpfung",
+		"list" : null,
+		"answers" : [
+			"richtig | richtig | richtig",
+			"richtig | richtig | falsch",
+			"richtig | falsch  | -",
+			"falsch  | richtig | -",
+			"falsch  | falsch  | -"
+		],
+		"correct" : 5
+	},
+	{
+		"num" : 49,
+		"question" : "Aufgabe",
+		"remark" : "Welche der folgenden chemischen Umsetzungen stellt einen Redoxvorgang dar?",
+		"list" : [
+			"H<sub>2</sub>PO<sub>4</sub><sup>-</sup> + OH<sup>-</sup> &mdash;&rarr; HPO<sub>4</sub><sup>2-</sup> + H<sub>2</sub>O",
+			"2 Na + Cl<sub>2</sub> &mdash;&rarr; 2 NaCl",
+			"S<sub>8</sub> + 8 CN<sup>-</sup> &mdash;&rarr; 8 SCN<sup>-</sup>",
+			"SO<sub>3</sub> + H<sub>2</sub>O &mdash;&rarr; H<sub>2</sub>SO<sub>4</sub>",
+			"Ca(HCO<sub>3</sub>)<sub>2</sub> &mdash;&rarr; CaCO<sub>3</sub> + CO<sub>2</sub> + H<sub>2</sub>O"
+		],
+		"answers" : [
+			"Nur 1 ist richtig",
+			"Nur 2 ist richtig",
+			"Nur 2 und 3 sind richtig",
+			"Nur 3 und 4 sind richtig",
+			"Nur 1 und 5 sind richtig"
+		],
+		"correct" : 3
+	},
+	{
+		"num" : 50,
+		"question" : "Aufgabe",
+		"remark" : "An einem blanken Stück metallischen Eisens, das in eine Kuper(II)-sulfat-Lösung eingebracht wird, scheidet sich elementares Kupfer ab,		<br />	<b>weil</b>	<br />	elementares Eisen gegenüber Kupfer(II)-Ionen ein Oxidationsmittel ist.	<br /><br />	Aussage 1 | Aussage 2 | Verknüpfung",
+		"list" : null,
+		"answers" : [
+			"richtig | richtig | richtig",
+			"richtig | richtig | falsch",
+			"richtig | falsch  | -",
+			"falsch  | richtig | -",
+			"falsch  | falsch  | -"
+		],
+		"correct" : 3
+	}
+];
